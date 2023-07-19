@@ -16,10 +16,11 @@ class FirstPage extends StatelessWidget {
             const Text('This is the first page'),
             ElevatedButton(
                 onPressed: () {
-                  Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => const SecondPage(
-                            data: "He he",
-                          )));
+                  // Navigator.of(context).push(MaterialPageRoute(
+                  //     builder: (context) => const SecondPage(
+                  //           data: "He he",
+                  //         )));
+                  Navigator.pushNamed(context, "/second", arguments: "Hello");
                 },
                 child: Text('Go to second'))
           ],
